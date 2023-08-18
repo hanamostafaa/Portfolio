@@ -8,6 +8,7 @@ body{
     top:0px;
     align-items: center;
     padding: 20px;
+    margin: auto;
 
 }
 ul
@@ -21,7 +22,7 @@ a
 {
     color: white;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+    
     border-right: 1px solid grey;
 padding-right: 2rem;
 }
@@ -36,10 +37,88 @@ a:hover
     padding:10px;
     border-radius: 20px;
     border-color: white;
-    border-style: double;
+    border-style: solid;
     border-width: 2px;
+    font-weight: bold;
 }
 #nav-bar img{
     width:30px;
 }
+
+#Home
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+#Home img
+{
+   position: relative;
+   top:50px;
+   border: 5px solid white;
+   border-radius: 30px;
+}
+#card
+{
+    width: 50%;
+}
+#card h2
+{
+    color: antiquewhite;
+    font-size: 60px;
+    font-family: 'Tektur', cursive;
+    text-shadow: 2px 2px #fb016d;
+   
+
+    position: relative;
+    left: 20px;
+}
+#card p
+{
+color: antiquewhite;
+font-size: larger;
+font-family: 'Ubuntu', sans-serif;
+font-style: oblique;
+
+}
+#resume {
+  background: #f7f7f7;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #610434;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+#resume:hover,
+#resume:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #fb016d;;
+}
+
+#resume:active {
+  opacity: .5;
+}
+  
+
+
 
