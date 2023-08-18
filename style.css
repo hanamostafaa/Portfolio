@@ -1,13 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body{
+    background-color: rgb(101, 8, 55);
+}
 #nav-bar
 {
-    background-color: blueviolet;
-    color: white;
+    background-color: rgb(101, 8, 55);
     position: sticky;
     top:0px;
-    
     align-items: center;
     padding: 20px;
 
@@ -19,18 +17,22 @@ ul
     list-style: none;
     justify-content: space-around;
 }
-li{
+a
+{
+    color: white;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    border-right: 1px solid grey;
+padding-right: 2rem;
 }
 a:link
 {
-    background-color:blueviolet;
     text-decoration: none;
 }
 a:hover
 {
-    color: rgb(58, 1, 49);
-    background: rgb(162, 90, 230);
+    color: rgb(241, 220, 238);
+    background:  rgb(179, 90, 135);
     padding:10px;
     border-radius: 20px;
     border-color: white;
