@@ -1,5 +1,12 @@
 let slideIndex = 0;
 showSlides();
+const el = document.querySelector(".nav-bar")
+const observer = new IntersectionObserver( 
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+
+observer.observe(el);
 
 function showSlides() {
   let i;
