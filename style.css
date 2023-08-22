@@ -85,6 +85,7 @@ a {
 {
     display: flex;
 height: 500px;
+margin-bottom: 30px;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
@@ -97,8 +98,8 @@ height: 340px;
 flex-shrink: 0;
 }
 #home-img{
-    width: 250px;
-height: 250px;
+    width: 260px;
+height: 260px;
 flex-shrink: 0;
 background: url(./images/curly.jpg), lightgray -6px -81.489px / 105.2% 140.267% no-repeat;
 background-position: center;
@@ -349,20 +350,27 @@ background-color: #e0dede;
 
 border-radius: 20px;
 }
-#project-button-1:active,#project-button-2:active,#project-button-3:active
+#project-button-1:active,#project-button-2:active,#project-button-3:active,
+#project-button-4:active,#project-button-5:active,#project-button-6:active
 {
-    border-bottom: 2px;
-    border-color: #e8a602;
-    border-style: solid;
+   background-color: #ffb700;
 }
 #projects-display
 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    width: 65%;
+    margin: auto;
     margin-top: 40px;
     align-self: center;
+}
+#projects-display img:hover
+{
+    transform:scale(1.2);
+    border: 1px solid gray;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 15px;
 }
 
 
@@ -445,6 +453,8 @@ margin: auto;
     height: 30px;
     margin-bottom: 20px;
     padding:5px;
+    padding-left: 1rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 #contact-form textarea
 {
@@ -454,6 +464,8 @@ margin: auto;
     height: 50px;
     margin-bottom: 20px;
     padding: 5px;
+    padding-left: 1rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 #form-submit
 {
@@ -554,4 +566,8 @@ background: var(--cards, #F9F7F7);
 #cert-button:active
 {
     background-color:#ffb70058;
+}
+.yellow-line
+{
+    border-bottom: 2px solid #ffb700 !important;
 }

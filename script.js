@@ -30,27 +30,45 @@ const display=(x)=>
     {
         project.style.display='none';
     };
+    all.classList.remove("yellow-line");
+    web.classList.remove("yellow-line");
+    oop.classList.remove("yellow-line");
+    dsa.classList.remove("yellow-line");
+    logic.classList.remove("yellow-line");
+    robotics.classList.remove("yellow-line");
     if(x===-1)
     {
         for(const project of projectsArr )
         {
             project.style.display='block';
         };
+        all.classList.add("yellow-line");
     }
     else if(x===0)
+    {
     projectsArr[0].style.display='block';
+    oop.classList.add("yellow-line");
+    }
     else if(x===1)
+    {
     projectsArr[1].style.display='block';
+    web.classList.add("yellow-line");
+    }
     else if(x===2)
+    {
     projectsArr[2].style.display='block';
+    robotics.classList.add("yellow-line");
+    }
     else if(x===3)
     {
     projectsArr[3].style.display='block';
     projectsArr[4].style.display='block';
+    logic.classList.add("yellow-line");
     }
     else if(x===4)
     {
     projectsArr[5].style.display='block';
+    dsa.classList.add("yellow-line");
     }
 
 }
