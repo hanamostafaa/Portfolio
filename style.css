@@ -1,6 +1,6 @@
 :root {
     --theme: #FFB800;
-    --background: white;
+    --background:#FFFFFF;
     --font: black;
     --nav-background: #cbcbcb80;
     --shadow: #FFB800;
@@ -8,6 +8,15 @@
     --switch: black;
 
 }
+body.dark {
+    --background:#000000;
+    --font:#ffffff;
+    --shadow:#fff200;
+
+    --nav-background:#FFB800;
+    --line:#ffffff;
+    --switch:#FFB800;
+ }
 
 /* switch settings 👇 */
 
@@ -325,7 +334,7 @@ li div a {
     width: 105.454px;
     height: 105.454px;
     top: 138px;
-    left: 1208px;
+    left: 950px;
 
 }
 
@@ -343,7 +352,7 @@ li div a {
     width: 105.454px;
     height: 105.454px;
     top: 500px;
-    left: 1490px;
+    left: 1000px;
 
 }
 
@@ -497,7 +506,7 @@ span {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75%;
     height: 540px;
     text-align: center;
     justify-content: center;
@@ -610,7 +619,7 @@ span {
 #main-proccess-container .blob1 {
     position: absolute;
     top: 20px;
-    left: 1400px;
+    left: 960px;
 }
 
 #main-proccess-container .blob2 {
@@ -622,7 +631,7 @@ span {
 #main-proccess-container .blob3 {
     position: absolute;
     top: 440px;
-    left: 1000px;
+    left: 950px;
 }
 
 #main-proccess-container .blob4 {
@@ -662,13 +671,13 @@ span {
 #main-project-container .blob2 {
     position: absolute;
     top: 40px;
-    left: 1600px;
+    left: 900px;
 }
 
 #main-project-container .blob3 {
     position: absolute;
-    top: 500px;
-    left: 1600px;
+    top: 550px;
+    left: 950px;
 }
 
 
@@ -793,7 +802,7 @@ span {
 #contact-container-large .blob1 {
     position: absolute;
     top: 30px;
-    left: 1600px;
+    left: 970px;
 
 }
 
@@ -885,6 +894,8 @@ span {
 #footer-nav ul li {
     cursor: pointer;
     color: var(--font);
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
 }
 
 
@@ -1028,13 +1039,13 @@ span {
 #main-certifi-container .blob1 {
     position: absolute;
     top: 200px;
-    left: 1510px;
+    left: 950px;
 }
 
 #main-certifi-container .blob2 {
     position: absolute;
     top: 600px;
-    left: 1700px;
+    left: 1050px;
 }
 
 #main-certifi-container .blob3 {

@@ -129,7 +129,7 @@ window.addEventListener(('scroll'), () => {
 
 
 })
-const switchbutton = document.querySelector('.circle')
+const switchbutton = document.querySelector('.slider');
 
 
 
@@ -137,9 +137,11 @@ const switchbutton = document.querySelector('.circle')
 
 
 
-switchbutton.addEventListener(('click'), () => {
+/*switchbutton.addEventListener("click", () => {
+    console.log('clicked');
     const style = document.documentElement.style;
     if (style.getPropertyValue('--background') === '#ffffff') {
+        console.log('if');
         style.setProperty('--background', '#000000');
         style.setProperty('--font', '#ffffff');
         style.setProperty('--shadow', '#fff200');
@@ -149,6 +151,7 @@ switchbutton.addEventListener(('click'), () => {
 
 
     } else {
+        console.log('if2')
         style.setProperty('--background', '#ffffff');
         style.setProperty('--font', '#000000');
         style.setProperty('--shadow', '#FFB800');
@@ -158,7 +161,10 @@ switchbutton.addEventListener(('click'), () => {
 
     }
 
-}
-)
+} 
+) */
+switchbutton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+ })
 
 
