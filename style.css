@@ -1,6 +1,6 @@
 :root {
     --theme: #FFB800;
-    --background:#FFFFFF;
+    --background: #FFFFFF;
     --font: black;
     --nav-background: #cbcbcb80;
     --shadow: #FFB800;
@@ -8,15 +8,16 @@
     --switch: black;
 
 }
-body.dark {
-    --background:#000000;
-    --font:#ffffff;
-    --shadow:#fff200;
 
-    --nav-background:#FFB800;
-    --line:#ffffff;
-    --switch:#FFB800;
- }
+body.dark {
+    --background: #000000;
+    --font: #ffffff;
+    --shadow: #fff200;
+
+    --nav-background: #FFB800;
+    --line: #ffffff;
+    --switch: #FFB800;
+}
 
 /* switch settings 👇 */
 
@@ -206,9 +207,12 @@ li div a {
     justify-content: space-around;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
 }
 
 #home-img {
+    margin: auto;
     width: 397px;
     height: 383px;
     flex-shrink: 0;
@@ -217,15 +221,9 @@ li div a {
     background-position: center;
     border-radius: 50%;
     border: 5px solid var(--theme);
+
 }
 
-#home p {
-    width: 264px;
-    height: 50px;
-    flex-shrink: 0;
-    text-align: center;
-    color: var(--font);
-}
 
 #home h1 {
     color: var(--theme);
@@ -240,12 +238,13 @@ li div a {
 
 #home p {
     color: var(--font);
-    font-family: Permanent Marker;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: bold;
     text-align: center;
-    margin: 4px;
     margin: auto;
+    width: 664px;
+    height: 50px;
 }
 
 #resume {
@@ -334,7 +333,7 @@ li div a {
     width: 105.454px;
     height: 105.454px;
     top: 138px;
-    left: 950px;
+    left: 1050px;
 
 }
 
@@ -351,8 +350,8 @@ li div a {
     position: absolute;
     width: 105.454px;
     height: 105.454px;
-    top: 500px;
-    left: 1000px;
+    top: 300px;
+    left: 300px;
 
 }
 
@@ -462,7 +461,7 @@ span {
 #main-about-container .blob2 {
     position: absolute;
     top: 1490px;
-    left: 646px;
+    left: 146px;
 
 }
 
@@ -485,14 +484,15 @@ span {
 }
 
 #skills li {
-    width: 80px;
-    justify-content: space-around;
+    width: 200px;
+    /* justify-content: space-around; */
     display: flex;
     flex-direction: row;
     color: var(--font);
 }
 
 #skills li div {
+    margin-left: 10px;
     color: var(--font);
     font-family: Poppins;
     font-size: 20px;
@@ -630,13 +630,13 @@ span {
 
 #main-proccess-container .blob3 {
     position: absolute;
-    top: 440px;
+    top: 480px;
     left: 950px;
 }
 
 #main-proccess-container .blob4 {
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 30px;
 }
 
@@ -644,11 +644,11 @@ span {
 
 #main-project-container {
     width: 100%;
-    height: 689px;
-    padding: 50px 0px;
+    height: 889px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     position: relative;
 }
 
@@ -670,14 +670,14 @@ span {
 
 #main-project-container .blob2 {
     position: absolute;
-    top: 40px;
-    left: 900px;
+    top: 10px;
+    left: 1000px;
 }
 
 #main-project-container .blob3 {
     position: absolute;
-    top: 550px;
-    left: 950px;
+    top: 150px;
+    left: 150px;
 }
 
 
@@ -693,12 +693,11 @@ span {
 
 
 #projects-buttons {
-
     width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: auto;
+    margin: 50px auto;
     left: 25px;
 
 }
@@ -707,7 +706,8 @@ span {
 #project-button-3,
 #project-button-4,
 #project-button-5,
-#project-button-6 {
+#project-button-6,
+#project-button-7 {
     cursor: pointer;
     border: none;
     background-color: var(--background);
@@ -715,7 +715,7 @@ span {
     font-size: 15px;
     font-weight: bolder;
     padding: 10px;
-    width: 80px;
+    width: 100px;
     color: var(--font);
 }
 
@@ -746,7 +746,8 @@ span {
 #project-button-3:hover,
 #project-button-4:hover,
 #project-button-5:hover,
-#project-button-6:hover {
+#project-button-6:hover,
+#project-button-7:hover {
     background-color: #ecc030;
 
     border-radius: 20px;
@@ -757,7 +758,8 @@ span {
 #project-button-3:active,
 #project-button-4:active,
 #project-button-5:active,
-#project-button-6:active {
+#project-button-6:active,
+#project-button-7:active {
     background-color: #ffb700;
 }
 
@@ -765,7 +767,7 @@ span {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px 50px;
+    grid-gap: 20px 30px;
     /* width: 65%; */
     /* flex: 1; */
     margin: auto;
@@ -894,7 +896,7 @@ span {
 #footer-nav ul li {
     cursor: pointer;
     color: var(--font);
-    font-family: 'Ubuntu',sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
 
@@ -996,12 +998,12 @@ span {
 }
 
 #cert-item {
-    justify-content: space-between;
     border-radius: 20px;
     background: #F9F7F7;
     box-shadow: 0px 4px 4px 0px var(--shadow);
-    width: 248px;
+    width: 260px;
     height: 330px;
+    padding: 5px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1038,26 +1040,26 @@ span {
 
 #main-certifi-container .blob1 {
     position: absolute;
-    top: 200px;
-    left: 950px;
+    top: 150px;
+    left: 1050px;
 }
 
 #main-certifi-container .blob2 {
     position: absolute;
-    top: 600px;
+    top: 900px;
     left: 1050px;
 }
 
 #main-certifi-container .blob3 {
     position: absolute;
-    top: 700px;
-    left: 20px;
+    top: 500px;
+    left: 30px;
 }
 
 #main-certifi-container .blob4 {
     position: absolute;
-    top: 700px;
-    left: 1000px;
+    top: 560px;
+    left: 600px;
 }
 
 #main-certifi-container h3 {
@@ -1077,6 +1079,7 @@ span {
 #cert-item p {
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
+    height: 20%;
 
 }
 
