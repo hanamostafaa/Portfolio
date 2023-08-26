@@ -12,6 +12,7 @@ const web = document.querySelector("#project-button-3");
 const robotics = document.querySelector("#project-button-4");
 const logic = document.querySelector("#project-button-5");
 const dsa = document.querySelector("#project-button-6");
+const mobile = document.querySelector("#project-button-7");
 const projectsArr = document.querySelectorAll("#project-item");
 
 
@@ -33,6 +34,7 @@ const display = (x) => {
     dsa.classList.remove("yellow-line");
     logic.classList.remove("yellow-line");
     robotics.classList.remove("yellow-line");
+    mobile.classList.remove("yellow-line");
     if (x === -1) {
         for (const project of projectsArr) {
             project.style.display = 'block';
@@ -44,21 +46,28 @@ const display = (x) => {
         oop.classList.add("yellow-line");
     }
     else if (x === 1) {
-        projectsArr[1].style.display = 'block';
+        projectsArr[2].style.display = 'block';
         web.classList.add("yellow-line");
     }
     else if (x === 2) {
-        projectsArr[2].style.display = 'block';
+        projectsArr[3].style.display = 'block';
+        projectsArr[4].style.display = 'block';
         robotics.classList.add("yellow-line");
     }
     else if (x === 3) {
-        projectsArr[3].style.display = 'block';
-        projectsArr[4].style.display = 'block';
+        projectsArr[7].style.display = 'block';
+        projectsArr[8].style.display = 'block';
         logic.classList.add("yellow-line");
     }
     else if (x === 4) {
-        projectsArr[5].style.display = 'block';
+        projectsArr[1].style.display = 'block';
         dsa.classList.add("yellow-line");
+    }
+
+    else if (x === 5) {
+        projectsArr[5].style.display = 'block';
+        projectsArr[6].style.display = 'block';
+        mobile.classList.add("yellow-line");
     }
 
 }
@@ -68,6 +77,8 @@ web.addEventListener("click", () => display(1));
 robotics.addEventListener("click", () => display(2));
 logic.addEventListener("click", () => display(3));
 dsa.addEventListener("click", () => display(4));
+mobile.addEventListener("click", () => display(5));
+
 
 
 
@@ -161,22 +172,10 @@ const switchbutton = document.querySelector('.slider');
 
     }
 
-} 
+}
 ) */
 switchbutton.addEventListener('click', () => {
     document.body.classList.toggle('dark');
  })
- const form = document.getElementById('contact-form');
 
- form.addEventListener('submit', (event) => {
-     
- 
-     const name = document.getElementById('name').value;
-     const email = document.getElementById('email').value;
-     const message = document.getElementById('textarea').value;
- 
-     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
- 
-     window.location.href = `mailto:hmostafa935@gmail.com?subject=New message&body=${body}`;
- });
 
