@@ -166,5 +166,17 @@ const switchbutton = document.querySelector('.slider');
 switchbutton.addEventListener('click', () => {
     document.body.classList.toggle('dark');
  })
+ const form = document.getElementById('contact-form');
 
+ form.addEventListener('submit', (event) => {
+     
+ 
+     const name = document.getElementById('name').value;
+     const email = document.getElementById('email').value;
+     const message = document.getElementById('textarea').value;
+ 
+     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+ 
+     window.location.href = `mailto:hmostafa935@gmail.com?subject=New message&body=${body}`;
+ });
 

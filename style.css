@@ -212,7 +212,7 @@ li div a {
     width: 397px;
     height: 383px;
     flex-shrink: 0;
-    background: url(./images/61274-removebg-preview.png), var(--background)-6px -81.489px / 105.2% 140.267% no-repeat;
+    background: url(./images/me2-removebg-preview.png), var(--background)-6px -81.489px / 105.2% 140.267% no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -437,9 +437,9 @@ span {
     color: var(--font);
 }
 
-/* #skills {
+ #skills {
     width: 100%;
-} */
+} 
 
 #skills ul {
 
@@ -490,15 +490,17 @@ span {
     display: flex;
     flex-direction: row;
     color: var(--font);
+
 }
 
 #skills li div {
     color: var(--font);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    position: relative;
 }
 
 
@@ -644,7 +646,7 @@ span {
 
 #main-project-container {
     width: 100%;
-    height: 689px;
+    height: 550px;
     padding: 50px 0px;
     display: flex;
     flex-direction: column;
@@ -763,8 +765,8 @@ span {
 
 #projects-display {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px 50px;
     /* width: 65%; */
     /* flex: 1; */
@@ -979,7 +981,7 @@ span {
     display: flex;
     flex-direction: column;
     padding: 60px 0px;
-    height: 900px;
+    height: 500px;
     justify-content: space-around;
     position: relative;
     width: 100%;
@@ -988,7 +990,7 @@ span {
 
 #cert-display {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 40px;
     align-self: center;
