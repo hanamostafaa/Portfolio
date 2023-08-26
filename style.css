@@ -652,6 +652,7 @@ span {
     flex-direction: column;
     /* justify-content: space-around; */
     position: relative;
+    background-color: var(--background);
 }
 
 
